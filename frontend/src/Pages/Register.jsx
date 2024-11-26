@@ -23,7 +23,7 @@ const Register = () => {
     try {
       await axios
         .post(
-          "https://medify-f5p6.onrender.com",
+          "https://medify-f5p6.onrender.com/api/v1/user/patient/register",
           { firstName, lastName, email, phone, nic, dob, gender, password },
           {
             withCredentials: true,
