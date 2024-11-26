@@ -20,7 +20,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://medify-f5p6.onrender.com",
+          "https://medify-f5p6.onrender.com/api/v1/user/patient/me",
           {
             withCredentials: true,
           }
