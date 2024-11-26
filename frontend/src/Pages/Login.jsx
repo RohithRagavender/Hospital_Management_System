@@ -1,4 +1,4 @@
-import axios from "axios";
+  import axios from "axios";
 import React, { useContext, useState } from "react";
 import { toast } from "react-toastify";
 import { Context } from "../main";
@@ -18,7 +18,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "https://medify-f5p6.onrender.com",
+          "https://medify-f5p6.onrender.com/api/v1/user/login",
           { email, password, confirmPassword, role: "Patient" },
           {
             withCredentials: true,
